@@ -2,9 +2,7 @@ name: 每日科技简报
 
 on:
   schedule:
-    # UTC 00:00 = 北京时间 08:00
-    - cron: '0 0 * * *'
-  # 允许手动触发，方便调试
+    - cron: '0 12 * * *' #  EDT 早上 8点
   workflow_dispatch:
 
 jobs:
