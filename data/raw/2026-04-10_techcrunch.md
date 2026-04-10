@@ -2,23 +2,23 @@ Checking your Browser…
 
 Verifying...
 
-Stuck? [Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/zpabg/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+Stuck? [Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/xq0tn/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 Success!
 
 Verification failed
 
-[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/zpabg/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/xq0tn/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 Verification expired
 
-[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/zpabg/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/xq0tn/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 Verification expired
 
-[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/zpabg/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/xq0tn/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
-[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/zpabg/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/xq0tn/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 [Privacy](https://www.cloudflare.com/privacypolicy/) • [Help](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/help)
 
@@ -30,6 +30,16 @@ Close
 
 [![logo](https://techcrunch.com/wp-content/uploads/2024/10/desktop-logo.svg)](https://techcrunch.com/)
 
+![](https://techcrunch.com/wp-content/uploads/2026/04/ChatGPT-OpenClaw-Claude.jpg?w=668)
+
+[AI](https://techcrunch.com/category/artificial-intelligence/)
+
+### [Anthropic temporarily banned OpenClaw’s creator from accessing Claude](https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/)
+
+- [Julie Bort](https://techcrunch.com/author/julie-bort/)
+
+1 hour ago
+
 ![A rendering of Ascend Elements factory in Kentucky.](https://techcrunch.com/wp-content/uploads/2026/04/Ascend-Elements-Apex-1_med-2048x1365-1.jpg?w=668)
 
 [Climate](https://techcrunch.com/category/climate/)
@@ -38,7 +48,7 @@ Close
 
 - [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
 
-1 hour ago
+2 hours ago
 
 ![This photograph taken in Mulhouse, eastern France on October 19, 2023, shows figurines next to the ChatGPT logo. (Photo by SEBASTIEN BOZON/AFP via Getty Images)](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1733837014-e.jpg?w=668)
 
@@ -48,19 +58,13 @@ Close
 
 - [Rebecca Bellan](https://techcrunch.com/author/rebecca-bellan/)
 
-4 hours ago
+5 hours ago
 
-![Crowd pointing fingers at a young woman](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-183765661.jpg?w=668)
-
-[Social](https://techcrunch.com/category/social/)
+**Top Headlines**
 
 ### [PSA: If you use the Meta AI app, your friends will find out and it will be embarrassing](https://techcrunch.com/2026/04/10/psa-if-you-use-the-meta-ai-app-your-friends-will-find-out-and-it-will-be-embarrassing/)
 
 - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
-
-7 hours ago
-
-**Top Headlines**
 
 ### [France to ditch Windows for Linux to reduce reliance on US tech](https://techcrunch.com/2026/04/10/france-to-ditch-windows-for-linux-to-reduce-reliance-on-us-tech/)
 
@@ -78,15 +82,30 @@ Close
 
 - [Marina Temkin](https://techcrunch.com/author/marina-temkin/)
 
-### [This founder helped build SpaceX’s most powerful rocket engine. Now he’s building a ‘fighter jet for orbit.’](https://techcrunch.com/2026/04/09/portal-raises-50-million-to-build-a-new-kind-of-high-power-rocket-engine/)
-
-- [Tim Fernholz](https://techcrunch.com/author/tim-fernholz/)
-
 * * *
 
 ## Latest News
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/latest/)
+
+- ![](https://techcrunch.com/wp-content/uploads/2026/04/art002e008487large.jpg?w=500)
+
+
+
+[Space](https://techcrunch.com/category/space/)
+
+
+
+### [How to watch NASA’s Artemis II splash back down to Earth](https://techcrunch.com/2026/04/10/how-to-watch-nasa-artemis-ii-landing/)
+
+
+
+
+
+  - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
+  - [Graham Starr](https://techcrunch.com/author/graham-starr/)
+
+11 minutes ago
 
 - ![](https://techcrunch.com/wp-content/uploads/2026/04/ChatGPT-OpenClaw-Claude.jpg?w=563)
 
@@ -104,7 +123,7 @@ Close
 
   - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-17 seconds ago
+1 hour ago
 
 - ![A rendering of Ascend Elements factory in Kentucky.](https://techcrunch.com/wp-content/uploads/2026/04/Ascend-Elements-Apex-1_med-2048x1365-1.jpg?w=563)
 
@@ -122,7 +141,7 @@ Close
 
   - [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
 
-1 hour ago
+2 hours ago
 
 - ![This photograph taken in Mulhouse, eastern France on October 19, 2023, shows figurines next to the ChatGPT logo. (Photo by SEBASTIEN BOZON/AFP via Getty Images)](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1733837014-e.jpg?w=563)
 
@@ -140,7 +159,7 @@ Close
 
   - [Rebecca Bellan](https://techcrunch.com/author/rebecca-bellan/)
 
-4 hours ago
+5 hours ago
 
 - ![](https://techcrunch.com/wp-content/uploads/2026/04/STTchallenge.jpeg?w=500)
 
@@ -158,7 +177,7 @@ Close
 
   - [Cindy Zackney](https://techcrunch.com/author/cindy-zackney/)
 
-4 hours ago
+5 hours ago
 
 - ![French tricolour flag (blue, white and red, symbol of the Republic of France) hanging from a flagpole above the entrance gate to the courtyard of the Elysee Palace, Exit from the Cabinet meeting at the Presidential Palace of the Elysee in Paris, France on August 27, 2025. The ministers get into their cars and leave the Elysee Palace. (Photo by Amaury Cornu / Hans Lucas via AFP)](https://techcrunch.com/wp-content/uploads/2026/04/france-flag-2233577438.jpg?w=516)
 
@@ -176,7 +195,7 @@ Close
 
   - [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
 
-6 hours ago
+7 hours ago
 
 - ![The YouTube logo and lettering](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2242441443.jpg?w=562)
 
@@ -194,7 +213,7 @@ Close
 
   - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
 
-6 hours ago
+7 hours ago
 
 - ![Plasma flows through an illustration of a tokamak fusion reactor.](https://techcrunch.com/wp-content/uploads/2024/07/GettyImages-1455925032.jpg?w=666)
 
@@ -212,7 +231,7 @@ Close
 
   - [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
 
-6 hours ago
+7 hours ago
 
 - ![General atmosphere at TechCrunch Disrupt Berlin 2017 at Arena Berlin.](https://techcrunch.com/wp-content/uploads/2018/10/27055664959_5fbe947d9b_o.jpg?w=563)
 
@@ -230,7 +249,7 @@ Close
 
   - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
 
-6 hours ago
+7 hours ago
 
 - ![Crowd pointing fingers at a young woman](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-183765661.jpg?w=551)
 
@@ -247,24 +266,6 @@ Close
 
 
   - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
-
-7 hours ago
-
-- ![woman wearing Snap Spectacles](https://techcrunch.com/wp-content/uploads/2024/09/IMG_1806.jpg?w=500)
-
-
-
-In Brief
-
-
-
-### [Snap gets closer to releasing new AI glasses after years-long hiatus](https://techcrunch.com/2026/04/10/snap-gets-closer-to-releasing-new-ai-glasses-after-years-long-hiatus/)
-
-
-
-
-
-  - [Lucas Ropek](https://techcrunch.com/author/lucas-ropek/)
 
 8 hours ago
 
@@ -499,7 +500,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-18 seconds ago
+1 hour ago
 
 ![This photograph taken in Mulhouse, eastern France on October 19, 2023, shows figurines next to the ChatGPT logo. (Photo by SEBASTIEN BOZON/AFP via Getty Images)](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1733837014-e.jpg?w=563)
 
@@ -509,7 +510,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Rebecca Bellan](https://techcrunch.com/author/rebecca-bellan/)
 
-4 hours ago
+5 hours ago
 
 [Startups](https://techcrunch.com/category/startups/)
 
@@ -517,7 +518,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Cindy Zackney](https://techcrunch.com/author/cindy-zackney/)
 
-4 hours ago
+5 hours ago
 
 [TechCrunch Disrupt 2026](https://techcrunch.com/events/tc-disrupt-2026/)
 
@@ -525,7 +526,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
 
-6 hours ago
+7 hours ago
 
 [AI](https://techcrunch.com/category/artificial-intelligence/)
 
@@ -533,7 +534,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-23 hours ago
+24 hours ago
 
 * * *
 
@@ -549,7 +550,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Cindy Zackney](https://techcrunch.com/author/cindy-zackney/)
 
-4 hours ago
+5 hours ago
 
 ![Plasma flows through an illustration of a tokamak fusion reactor.](https://techcrunch.com/wp-content/uploads/2024/07/GettyImages-1455925032.jpg?w=666)
 
@@ -559,7 +560,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
 
-6 hours ago
+7 hours ago
 
 [TechCrunch Disrupt 2026](https://techcrunch.com/events/tc-disrupt-2026/)
 
@@ -567,7 +568,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
 
-6 hours ago
+7 hours ago
 
 [Startups](https://techcrunch.com/category/startups/)
 
@@ -576,7 +577,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 - [Maggie Nye](https://techcrunch.com/author/maggie-stamets/)
 - [Isabelle Johannessen](https://techcrunch.com/author/isabelle-johannessen/)
 
-23 hours ago
+1 day ago
 
 [Startups](https://techcrunch.com/category/startups/)
 
@@ -799,7 +800,7 @@ Mar 19, 2026
 
 - [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
 
-6 hours ago
+7 hours ago
 
 ![A pulling unit or workover rig on an oil well in Utah](https://techcrunch.com/wp-content/uploads/2026/04/utah-oil-derrick-1371861994.jpg?w=563)
 
@@ -847,7 +848,7 @@ In Brief
 
 - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
 
-6 hours ago
+7 hours ago
 
 ![](https://techcrunch.com/wp-content/uploads/2026/04/54889021188_e8f5317c37_o.jpg?w=668)
 
@@ -933,7 +934,7 @@ In Brief
 
 - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
 
-6 hours ago
+7 hours ago
 
 ![General atmosphere at TechCrunch Disrupt Berlin 2017 at Arena Berlin.](https://techcrunch.com/wp-content/uploads/2018/10/27055664959_5fbe947d9b_o.jpg?w=563)
 
@@ -943,7 +944,7 @@ In Brief
 
 - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
 
-6 hours ago
+7 hours ago
 
 [Social](https://techcrunch.com/category/social/)
 
@@ -951,7 +952,7 @@ In Brief
 
 - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
 
-7 hours ago
+8 hours ago
 
 [Media & Entertainment](https://techcrunch.com/category/media-entertainment/)
 
@@ -959,7 +960,7 @@ In Brief
 
 - [Sarah Perez](https://techcrunch.com/author/sarah-perez/)
 
-23 hours ago
+1 day ago
 
 [Apps](https://techcrunch.com/category/apps/)
 
@@ -981,7 +982,7 @@ In Brief
 
 - [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
 
-1 hour ago
+2 hours ago
 
 ![General atmosphere at TechCrunch Disrupt Berlin 2017 at Arena Berlin.](https://techcrunch.com/wp-content/uploads/2018/10/27055664959_5fbe947d9b_o.jpg?w=563)
 
@@ -991,7 +992,7 @@ In Brief
 
 - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
 
-6 hours ago
+7 hours ago
 
 [Transportation](https://techcrunch.com/category/transportation/)
 
@@ -999,7 +1000,7 @@ In Brief
 
 - [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
 
-23 hours ago
+1 day ago
 
 [TechCrunch Disrupt 2026](https://techcrunch.com/events/tc-disrupt-2026/)
 
@@ -1035,7 +1036,7 @@ In Brief
 
   - [Lucas Ropek](https://techcrunch.com/author/lucas-ropek/)
 
-8 hours ago
+9 hours ago
 
 - ![A Google Cloud logo outside the Google Cloud data center ahead of its ceremonial opening in Hanau, Germany, on Friday, Oct. 6, 2023. Microsoft Corp., Alphabet Inc.'s Google and ChatGPT maker OpenAI use cloud computing that relies on thousands of chips inside servers in massive data centers across the globe to train AI algorithms called models, analyzing data to help them learn to perform tasks. Photographer: Alex Kraus/Bloomberg via Getty Images](https://techcrunch.com/wp-content/uploads/2024/04/GettyImages-1709348485.jpg?w=562)
 
