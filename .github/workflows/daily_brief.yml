@@ -2,7 +2,7 @@ name: 每日科技简报
 
 on:
   schedule:
-    - cron: '40 12 * * *' # 我们设为 12:20 UTC，错开整点高峰
+    - cron: '40 12 * * *' 
   workflow_dispatch:
 
 jobs:
