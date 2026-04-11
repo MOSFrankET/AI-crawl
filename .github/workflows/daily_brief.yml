@@ -2,7 +2,7 @@ name: 每日科技简报
 
 on:
   schedule:
-    - cron: '0 13 * * *'  #  EDT 早上 8点
+    - cron: '40 12 * * *' # 我们设为 12:20 UTC，错开整点高峰
   workflow_dispatch:
 
 jobs:
