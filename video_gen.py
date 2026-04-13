@@ -69,26 +69,84 @@ def parse_brief(filepath: str) -> dict:
     解析简报 Markdown，提取标题与三条要点。
 
     返回：
-        {"title": str, "points": [{"header": str, "body": str}, ...]}
+        {"title": str, "points": [{"header": str, "body": str, "visual_keyword": str}, ...]}
     """
     with open(filepath, "r", encoding="utf-8") as f:
         text = f.read()
 
+    # ── 调试：打印前 25 行，方便肉眼核对格式 ──
+    lines = text.splitlines()
+    log.info("[调试] 简报前 25 行原始内容：")
+    for i, line in enumerate(lines[:25]):
+        log.info(f"  [{i:02d}] {repr(line)}")
+
     title_match = re.search(r"\*\*【(.+?)】\*\*", text)
     title = title_match.group(1) if title_match else "今日科技简报"
 
-    header_pattern = re.compile(r"\*\*🔥\s*要点[一二三]：\*\*\s*(.+)")
-    headers = header_pattern.findall(text)
+    # ── 方案 A：标题在 ** 内部，格式：**🔥 要点一：标题内容** ──
+    # 原错误：r"\*\*🔥\s*要点[一二三]：\*\*\s*(.+)"  ← 把 ** 放在冒号后面了
+    header_pattern_a = re.compile(r"\*\*🔥\s*要点[一二三四五六七八九十]：(.+?)\*\*")
+    headers = header_pattern_a.findall(text)
+    log.info(f"[调试] 方案A 标题正则匹配行（共 {len(headers)} 个）：")
+    for h in headers:
+        log.info(f"  >> {repr(h)}")
+
+    # ── 方案 B（兼容）：标题在 ** 外部，格式：**🔥 要点一：** 标题内容 ──
+    if not headers:
+        header_pattern_b = re.compile(r"\*\*🔥\s*要点[一二三四五六七八九十]：\*\*\s*(.+)")
+        headers = header_pattern_b.findall(text)
+        log.info(f"[调试] 方案B 标题正则匹配（共 {len(headers)} 个）：{headers}")
 
     body_pattern = re.compile(
         r"📎\s*来源：.+?\n\n([\s\S]+?)(?=\n---|\Z)", re.MULTILINE
     )
     bodies = body_pattern.findall(text)
+    log.info(f"[调试] 正文正则匹配结果（共 {len(bodies)} 段）")
 
     points = []
     for i in range(min(3, len(headers))):
         body = bodies[i].strip() if i < len(bodies) else ""
-        points.append({"header": headers[i].strip(), "body": body})
+        # 取正文第一个非空行作为视觉关键词
+        visual_keyword = next(
+            (l.strip() for l in body.splitlines() if l.strip()), headers[i]
+        )
+        points.append({
+            "header": headers[i].strip(),
+            "body": body,
+            "visual_keyword": visual_keyword,
+        })
+
+    # ── 兜底方案：按 --- 分割线切分新闻块 ──
+    if not points:
+        log.warning("标题正则未命中，降级为 --- 分割线方案...")
+        blocks = re.split(r"\n---+\n", text)
+        log.info(f"[调试] --- 分割得到 {len(blocks)} 个块")
+        for idx, block in enumerate(blocks):
+            block = block.strip()
+            if not block:
+                continue
+            block_lines = [l for l in block.splitlines() if l.strip()]
+            log.info(f"  [块{idx}] 首行: {repr(block_lines[0]) if block_lines else '(空)'}")
+            if not block_lines:
+                continue
+            first_line = block_lines[0]
+            # 去除 Markdown 加粗符号和表情，提取纯文本标题
+            clean_header = re.sub(r"\*+", "", first_line).strip()
+            clean_header = re.sub(r"🔥\s*要点[一二三四五六七八九十]：", "", clean_header).strip()
+            # 跳过纯标题行（过短或只是日期/导语）
+            if len(clean_header) < 5:
+                continue
+            # 第二个非空行作为视觉关键词
+            visual_keyword = block_lines[1].strip() if len(block_lines) > 1 else clean_header
+            body = "\n".join(block_lines[1:]).strip()
+            points.append({
+                "header": clean_header,
+                "body": body,
+                "visual_keyword": visual_keyword,
+            })
+            if len(points) >= 3:
+                break
+        log.info(f"[调试] 分割线方案提取到 {len(points)} 条要点")
 
     if not points:
         log.error("未能从简报中提取到任何要点，请检查简报文件格式")
