@@ -22,6 +22,9 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
+      - name: 安装中文字体（Ubuntu）
+        run: sudo apt-get install -y fonts-wqy-microhei
+
       - name: 运行简报生成
         env:
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
@@ -29,11 +32,17 @@ jobs:
           PYTHONUTF8: "1"
         run: python main.py
 
+      - name: 生成短视频
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PYTHONUTF8: "1"
+        run: python video_gen.py
+
       - name: 提交并推送简报文件
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/briefs/ data/raw/
+          git add data/briefs/ data/raw/ output/
           # 只在有新文件时才提交
-          git diff --staged --quiet || git commit -m "自动更新：$(date '+%Y-%m-%d') 科技简报"
+          git diff --staged --quiet || git commit -m "自动更新：$(date '+%Y-%m-%d') 科技简报与视频"
           git push

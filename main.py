@@ -8,6 +8,7 @@ import sys
 import datetime
 from scraper import scrape_and_save
 from summarizer import generate_brief
+import video_gen
 
 # 强制 UTF-8 输出，避免 Windows 终端 emoji 乱码
 sys.stdout.reconfigure(encoding="utf-8")
@@ -68,6 +69,15 @@ def run(sources: list = None):
         print(f"{name.upper()} AI 简报")
         print(f"{'='*50}")
         print(brief)
+
+    # 第五步：根据最新简报生成短视频
+    print(f"\n{'='*50}")
+    print("开始生成短视频")
+    print(f"{'='*50}")
+    try:
+        video_gen.main()
+    except Exception as e:
+        print(f"视频生成失败：{e}")
 
     print(f"\n所有任务完成！日期：{date_str}")
 

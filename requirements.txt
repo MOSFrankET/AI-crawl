@@ -1,3 +1,8 @@
 firecrawl-py
 python-dotenv
 anthropic
+moviepy
+imageio-ffmpeg
+edge-tts
+Pillow
+requests
