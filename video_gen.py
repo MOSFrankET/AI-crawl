@@ -272,10 +272,11 @@ def words_to_sentences(words: list, text: str) -> list:
     返回：
         [{"text": str, "start": float, "end": float}, ...]
     """
-    # ── 切分句子（保留标点） ──
+    # ── 切分句子：只在主要句末标点处断句，逗号不断
+    #    逗号处 TTS 停顿极短，若在此断句会导致字幕时间戳飘移 ──
     sent_texts = [
         s.strip()
-        for s in re.split(r'(?<=[。！？…,，.!?])', text)
+        for s in re.split(r'(?<=[。！？…])', text)
         if s.strip()
     ]
     if not sent_texts:
@@ -701,17 +702,143 @@ def pre_render_title_overlay(title: str, is_cover: bool) -> np.ndarray:
     return np.array(canvas)
 
 
-def pre_render_subtitle_overlay(text: str) -> np.ndarray:
+def strip_punctuation_for_display(text: str) -> str:
+    """
+    去除文本中所有标点符号，用于字幕显示（字幕不显示标点，仅保留文字）。
+
+    参数：
+        text: 原始句子文本
+
+    返回：
+        去除标点后的纯文字字符串
+    """
+    # 去除中英文标点、省略号、书名号等所有标点
+    return re.sub(r'[^\u4e00-\u9fa5A-Za-z0-9\s]', '', text).strip()
+
+
+def find_key_phrase(text: str) -> str:
+    """
+    从句子中提取最重要的短语，用于字幕红色加粗强调。
+
+    优先级：
+        1. 英文/数字技术词（如 AI、GPT-4、5G）
+        2. 较长中文词组（排除常见停用词）
+
+    参数：
+        text: 已去标点的字幕文本
+
+    返回：
+        重点短语字符串；若无匹配返回空字符串
+    """
+    # 优先取英文+数字技术词（长度 ≥ 2）
+    en_matches = re.findall(r'[A-Za-z][A-Za-z0-9\-\.]{1,}', text)
+    if en_matches:
+        return max(en_matches, key=len)
+
+    # 取 2-6 字的中文词组，过滤停用词
+    stop = {
+        "的", "了", "在", "是", "有", "和", "与", "等", "以", "从", "到",
+        "将", "对", "为", "中", "上", "下", "这", "其", "被", "会", "也",
+        "都", "但", "而", "已经", "可以", "通过", "我们", "他们", "非常",
+        "表示", "认为", "目前", "今天", "这个", "就是", "一个", "可能",
+    }
+    zh_matches = re.findall(r'[\u4e00-\u9fa5]{2,6}', text)
+    zh_matches = [m for m in zh_matches if m not in stop]
+    if zh_matches:
+        return max(zh_matches, key=len)
+
+    return ""
+
+
+def is_colloquial_filler(text: str) -> bool:
+    """
+    判断一段句子是否为纯口语化衬词/衔接短句。
+    此类句子仅保留在配音中，字幕不显示。
+
+    判断条件（满足任一）：
+        - 去除标点后字符数 ≤ 6 且含语气助词
+        - 匹配已知口语化过渡词列表
+
+    参数：
+        text: 原始句子文本
+
+    返回：
+        True 表示该句应"只配音不显示字幕"
+    """
+    clean = re.sub(r'[^\u4e00-\u9fa5A-Za-z0-9]', '', text)
+    if not clean:
+        return True
+
+    modal_particles = set("啊呢嘛吧哦哎嗯喔哟咧哈噢")
+    if len(clean) <= 6 and any(c in modal_particles for c in clean):
+        return True
+
+    known_fillers = {
+        "你想啊", "对吧", "是吧", "真的", "确实", "嗯嗯", "没错嘛",
+        "你知道吧", "其实吧", "说真的", "简单说", "话说回来",
+        "对不对", "懂吗", "你看", "当然了",
+    }
+    return clean in known_fillers or any(f in clean for f in known_fillers)
+
+
+def _render_line_with_emphasis(
+    draw: ImageDraw.Draw,
+    line: str,
+    x: int,
+    y: int,
+    font: ImageFont.FreeTypeFont,
+    key_phrase: str,
+) -> None:
+    """
+    在单行字幕中将 key_phrase 渲染为红色（模拟加粗），其余为黄色。
+    模拟加粗：向四周偏移 1px 各绘制一次，形成描边加粗效果。
+
+    参数：
+        draw:       PIL ImageDraw 对象
+        line:       本行完整文字
+        x:          行起始 x 坐标（居中后）
+        y:          行起始 y 坐标
+        font:       正文字体
+        key_phrase: 需要强调的短语
+    """
+    idx    = line.index(key_phrase)
+    before = line[:idx]
+    after  = line[idx + len(key_phrase):]
+
+    cur_x = x
+
+    # ── 前缀：阴影 + 黄色 ──
+    if before:
+        draw.text((cur_x + 2, y + 2), before, font=font, fill=(0, 0, 0, 200))
+        draw.text((cur_x,     y    ), before, font=font, fill=(255, 230, 0, 255))
+        cur_x += draw.textbbox((0, 0), before, font=font)[2]
+
+    # ── 重点短语：四向偏移阴影 + 红色 ──
+    bold_offsets = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
+    for dx, dy in bold_offsets:
+        draw.text((cur_x + 2 + dx, y + 2 + dy), key_phrase, font=font, fill=(0, 0, 0, 200))
+    for dx, dy in bold_offsets:
+        draw.text((cur_x + dx, y + dy), key_phrase, font=font, fill=(255, 55, 55, 255))
+    cur_x += draw.textbbox((0, 0), key_phrase, font=font)[2]
+
+    # ── 后缀：阴影 + 黄色 ──
+    if after:
+        draw.text((cur_x + 2, y + 2), after, font=font, fill=(0, 0, 0, 200))
+        draw.text((cur_x,     y    ), after, font=font, fill=(255, 230, 0, 255))
+
+
+def pre_render_subtitle_overlay(text: str, key_phrase: str = "") -> np.ndarray:
     """
     预渲染单句字幕叠加层（RGBA）。
 
     样式：
-        - 画面底部居中
-        - 半透明黑色底条（增强对比度）
-        - 黄色文字 + 黑色阴影
+        - 画面底部居中，半透明黑色底条增强对比度
+        - 默认黄色文字 + 黑色阴影
+        - key_phrase 部分用红色 + 四向偏移模拟加粗，形成重点强调效果
 
     参数：
-        text: 字幕句子文本
+        text:       字幕显示文本（已去标点）
+        key_phrase: 需红色加粗强调的关键短语（可为空）
 
     返回：
         (VIDEO_HEIGHT, VIDEO_WIDTH, 4) uint8 RGBA numpy 数组
@@ -733,13 +860,20 @@ def pre_render_subtitle_overlay(text: str) -> np.ndarray:
         fill=(0, 0, 0, 180),
     )
 
-    # 字幕文字（黄色高亮 + 黑色阴影）
+    # 字幕文字
     y = bar_top
+    remaining_key = key_phrase   # 只强调第一次出现
     for line in lines:
         lw = draw.textbbox((0, 0), line, font=font_sub)[2]
         x  = (VIDEO_WIDTH - lw) // 2
-        draw.text((x + 2, y + 2), line, font=font_sub, fill=(0,   0,   0,   200))  # 阴影
-        draw.text((x,     y    ), line, font=font_sub, fill=(255, 230, 0,   255))  # 黄色
+
+        if remaining_key and remaining_key in line:
+            _render_line_with_emphasis(draw, line, x, y, font_sub, remaining_key)
+            remaining_key = ""  # 已渲染，后续行恢复普通样式
+        else:
+            draw.text((x + 2, y + 2), line, font=font_sub, fill=(0,   0,   0,   200))
+            draw.text((x,     y    ), line, font=font_sub, fill=(255, 230, 0,   255))
+
         y += line_h
 
     return np.array(canvas)
@@ -917,11 +1051,21 @@ def main():
                      f"{sentences[-1]['end']:.2f}s（音频）" if sentences else "0s")
 
             # ③ 预渲染本段标题 + 各句字幕叠加层
-            title_overlay     = pre_render_title_overlay(title, is_cover)
-            subtitle_overlays = {
-                s["text"]: pre_render_subtitle_overlay(s["text"])
-                for s in sentences
-            }
+            # 规则：
+            #   - 口语化衬词（如"你想啊"）：只配音，不显示字幕（不加入 dict）
+            #   - 其余句子：去除标点后显示，并注入红色加粗的关键短语
+            title_overlay = pre_render_title_overlay(title, is_cover)
+            subtitle_overlays = {}
+            for s in sentences:
+                raw = s["text"]
+                if is_colloquial_filler(raw):
+                    log.info(f"    [字幕过滤] 口语衬词跳过显示：{repr(raw)}")
+                    continue
+                clean   = strip_punctuation_for_display(raw)
+                key_ph  = find_key_phrase(clean)
+                if key_ph:
+                    log.info(f"    [字幕强调] 「{key_ph}」← {repr(clean[:20])}")
+                subtitle_overlays[raw] = pre_render_subtitle_overlay(clean, key_phrase=key_ph)
 
             # ④ 合成片段
             seg = create_dynamic_segment(
