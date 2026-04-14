@@ -156,6 +156,25 @@ def parse_brief(filepath: str) -> dict:
     return {"title": title, "points": points}
 
 
+def extract_keywords_from_text(text: str, n: int = 4) -> list:
+    """
+    从文本中提取搜索关键词（中英文混合）。
+
+    参数：
+        text: 源文本
+        n:    最多返回多少个关键词
+
+    返回：
+        关键词列表（优先保留英文技术词及较长中文词组）
+    """
+    # 常见无意义停用词
+    stop = {"的", "了", "在", "是", "有", "和", "与", "等", "以", "从", "到",
+            "将", "对", "为", "中", "上", "下", "这", "其", "被", "会"}
+    tokens = re.findall(r"[A-Za-z0-9]+|[\u4e00-\u9fa5]{2,}", text)
+    result = [t for t in tokens if t not in stop and len(t) > 1]
+    return result[:n] if result else ["technology", "news"]
+
+
 # ════════════════════════════════════════════════════════════════════
 # 2. 台本口语化改写（不变）
 # ════════════════════════════════════════════════════════════════════
@@ -239,14 +258,16 @@ def words_to_sentences(words: list, text: str) -> list:
     """
     将 edge-tts 词语边界列表映射为逐句时间段。
 
-    算法：
+    算法（比例顺序分配）：
         1. 按中文句末标点切分句子
-        2. 逐词标记其在原文中的字符起始位置
-        3. 将各词分配到所属句子，统计每句的 [start, end] 时间
+        2. 计算各句字符数占总字符数的比例
+        3. 按此比例将词语顺序分配给各句子
+           — 不依赖 text.find() 字符位置查找，
+             可正确处理 TTS 对数字/英文的规范化读法
 
     参数：
-        words: edge-tts WordBoundary 列表
-        text:  原始台本文本
+        words: edge-tts WordBoundary 列表（offset/duration 已换算为秒）
+        text:  原始台本文本（与字幕显示文字完全一致）
 
     返回：
         [{"text": str, "start": float, "end": float}, ...]
@@ -273,42 +294,47 @@ def words_to_sentences(words: list, text: str) -> list:
             t += dur
         return result
 
-    # ── 为每个词标记其在原文中的字符起始位置 ──
-    search_pos = 0
-    for w in words:
-        idx = text.find(w["text"], search_pos)
-        if idx != -1:
-            w["char_start"] = idx
-            search_pos = idx + len(w["text"])
-        else:
-            w["char_start"] = search_pos   # 找不到时记当前扫描位置
-
-    # ── 确定每个句子在原文中的字符范围 ──
-    sent_char_ranges = []
-    pos = 0
-    for s in sent_texts:
-        core = s.rstrip("。！？…,，.!? ")     # 去末尾标点后在原文中定位
-        idx  = text.find(core, pos) if core else pos
-        if idx == -1:
-            idx = pos
-        end = idx + len(s)
-        sent_char_ranges.append((idx, end))
-        pos = end
-
-    # ── 将词分配到各句子，统计时间范围 ──
+    # ── 按字符数比例顺序分配词语到句子 ──
+    # 原则：各句分得的词语数 ∝ 该句字符数 / 总字符数
+    # 不依赖字符位置查找，兼容 TTS 数字/英文规范化
+    total_chars = max(sum(len(s) for s in sent_texts), 1)
+    n_words = len(words)
+    chars_consumed = 0
+    word_start_idx = 0
     result = []
-    for (s_start, s_end), s_text in zip(sent_char_ranges, sent_texts):
-        sw = [w for w in words if s_start <= w.get("char_start", 0) < s_end]
-        if sw:
-            t_start = sw[0]["offset"]
-            t_end   = sw[-1]["offset"] + sw[-1]["duration"]
+
+    for i, s_text in enumerate(sent_texts):
+        chars_consumed += len(s_text)
+
+        if i == len(sent_texts) - 1:
+            # 最后一句：接收所有剩余词语，防止末尾词被丢弃
+            sent_words = words[word_start_idx:]
+        else:
+            # 按字符累计比例确定当前句的词语边界
+            target_end = int(round(n_words * chars_consumed / total_chars))
+            target_end = max(target_end, word_start_idx + 1)   # 至少分到 1 个词
+            target_end = min(target_end, n_words)
+            sent_words = words[word_start_idx:target_end]
+            word_start_idx = target_end
+
+        if sent_words:
+            t_start = sent_words[0]["offset"]
+            t_end   = sent_words[-1]["offset"] + sent_words[-1]["duration"]
         elif result:
+            # 接续上一句结尾，按字符数估算时长
             t_start = result[-1]["end"]
-            t_end   = t_start + max(1.0, len(s_text) * 0.12)
+            t_end   = t_start + max(0.5, len(s_text) * 0.12)
         else:
             t_start = 0.0
-            t_end   = max(1.0, len(s_text) * 0.12)
+            t_end   = max(0.5, len(s_text) * 0.12)
+
         result.append({"text": s_text, "start": t_start, "end": t_end})
+
+    # ── 调试日志：输出每句字幕的精确时间范围 ──
+    for r in result:
+        log.info(f"  字幕对齐 [{r['start']:.3f}s – {r['end']:.3f}s] 「{r['text'][:20]}…」"
+                 if len(r['text']) > 20 else
+                 f"  字幕对齐 [{r['start']:.3f}s – {r['end']:.3f}s] 「{r['text']}」")
 
     return result
 
@@ -328,13 +354,18 @@ class AssetsManager:
 
     # ── 公开接口 ──────────────────────────────────────────────────
 
-    def get_background_video(self, keywords: list, download_dir: str) -> Optional[str]:
+    def get_background_video(
+        self, keywords: list, download_dir: str,
+        tag: str = "bg", page: int = 1,
+    ) -> Optional[str]:
         """
         尝试从 Pexels 视频接口下载竖屏背景视频。
 
         参数：
             keywords:     搜索关键词列表
             download_dir: 视频文件保存目录（临时目录）
+            tag:          文件名唯一标识（避免多段覆盖同一文件）
+            page:         Pexels 结果页码（1 起），同关键词不同页可得不同素材
 
         返回：
             本地视频文件路径；若获取失败返回 None
@@ -343,21 +374,25 @@ class AssetsManager:
             log.info("未配置 PEXELS_API_KEY，跳过视频素材获取")
             return None
         try:
-            return self._fetch_video_from_pexels(keywords, download_dir)
+            return self._fetch_video_from_pexels(keywords, download_dir, tag=tag, page=page)
         except Exception as e:
             log.warning(f"Pexels 视频获取失败：{e}，降级使用图片")
             return None
 
-    def get_background_image(self, keywords: list) -> Image.Image:
+    def get_background_image(self, keywords: list, page: int = 1) -> Image.Image:
         """
         获取背景图片（Pexels 图片 → 渐变色兜底）。
+
+        参数：
+            keywords: 搜索关键词列表
+            page:     Pexels 结果页码（1 起）
 
         返回：
             VIDEO_WIDTH x VIDEO_HEIGHT 的 PIL RGB Image
         """
         if self.api_key:
             try:
-                return self._fetch_image_from_pexels(keywords)
+                return self._fetch_image_from_pexels(keywords, page=page)
             except Exception as e:
                 log.warning(f"Pexels 图片获取失败：{e}，使用渐变色兜底")
         else:
@@ -366,10 +401,14 @@ class AssetsManager:
 
     # ── 内部实现 ─────────────────────────────────────────────────
 
-    def _fetch_video_from_pexels(self, keywords: list, download_dir: str) -> str:
+    def _fetch_video_from_pexels(
+        self, keywords: list, download_dir: str,
+        tag: str = "bg", page: int = 1,
+    ) -> str:
         """
         调用 Pexels Video Search API，下载竖屏背景视频。
         优先选取竖屏（height > width）且最接近 1080p 的文件。
+        tag 参数用于给下载文件命名，避免多段下载时互相覆盖。
         """
         query   = " ".join(keywords[:3])
         headers = {"Authorization": self.api_key}
@@ -377,6 +416,7 @@ class AssetsManager:
             "query":       query,
             "orientation": "portrait",
             "per_page":    5,
+            "page":        page,
             "size":        "medium",
         }
         resp = requests.get(
@@ -409,7 +449,8 @@ class AssetsManager:
                 f"下载 Pexels 视频（{best.get('width')}x{best.get('height')}，"
                 f"关键词：{query}）"
             )
-            vid_path = os.path.join(download_dir, "bg_video.mp4")
+            # 使用 tag 区分不同段的下载文件，避免多段同时运行时互相覆盖
+            vid_path = os.path.join(download_dir, f"bg_video_{tag}.mp4")
 
             r = requests.get(vid_url, timeout=120, stream=True)
             r.raise_for_status()
@@ -422,11 +463,17 @@ class AssetsManager:
 
         raise ValueError("未找到可用的视频文件")
 
-    def _fetch_image_from_pexels(self, keywords: list) -> Image.Image:
-        """调用 Pexels Photo Search API，下载竖屏背景图。"""
+    def _fetch_image_from_pexels(self, keywords: list, page: int = 1) -> Image.Image:
+        """
+        调用 Pexels Photo Search API，下载竖屏背景图。
+        page 参数可获取不同页的结果，避免同关键词重复使用同一张图。
+        """
         query   = " ".join(keywords[:3])
         headers = {"Authorization": self.api_key}
-        params  = {"query": query, "orientation": "portrait", "size": "large", "per_page": 5}
+        params  = {
+            "query": query, "orientation": "portrait",
+            "size": "large", "per_page": 5, "page": page,
+        }
         resp    = requests.get(
             "https://api.pexels.com/v1/search",
             headers=headers, params=params, timeout=10,
@@ -434,10 +481,11 @@ class AssetsManager:
         resp.raise_for_status()
         photos = resp.json().get("photos", [])
         if not photos:
-            raise ValueError(f"Pexels 图片搜索 '{query}' 无结果")
+            raise ValueError(f"Pexels 图片搜索 '{query}' 第{page}页无结果")
 
+        # 取第一张（每次用不同 page 就能得到不同图片）
         img_url  = photos[0]["src"].get("portrait") or photos[0]["src"]["large"]
-        log.info(f"下载 Pexels 背景图（关键词：{query}）")
+        log.info(f"下载 Pexels 背景图（关键词：{query}，第{page}页）")
         img_data = requests.get(img_url, timeout=30)
         img_data.raise_for_status()
 
@@ -783,10 +831,8 @@ def main():
     title  = brief["title"]
     points = brief["points"]
 
-    # ── Step 2：提取搜索关键词 ──
-    keywords = re.findall(r"[\u4e00-\u9fa5A-Za-z0-9]+", title)[:4]
-    if not keywords:
-        keywords = ["technology", "news"]
+    # ── Step 2：提取通用搜索关键词（用于封面/结语） ──
+    general_keywords = extract_keywords_from_text(title, n=4)
 
     # ── Step 3：准备输出目录 ──
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -798,73 +844,89 @@ def main():
 
         assets = AssetsManager()
 
-        # ── Step 4：获取背景素材 ──
-        bg_video_path = assets.get_background_video(keywords, tmpdir)
-        bg_video_clip = None
-        bg_image_np   = None
-
-        if bg_video_path:
-            try:
-                bg_video_clip = VideoFileClip(bg_video_path)
-                log.info(
-                    f"视频背景已加载：{bg_video_clip.duration:.1f}s "
-                    f"（{bg_video_clip.w}x{bg_video_clip.h}）"
-                )
-            except Exception as e:
-                log.warning(f"加载背景视频失败：{e}，降级使用图片")
-                bg_video_clip = None
-
-        if bg_video_clip is None:
-            bg_pil      = assets.get_background_image(keywords)
-            bg_image_np = np.array(bg_pil)
-
-        # ── Step 5：预渲染公共叠加层 ──
+        # ── Step 4：预渲染公共暗化叠加层 ──
         dark_overlay = pre_render_dark_overlay(opacity=120)
 
-        # ── Step 6：定义各段台本 ──
+        # ── Step 5：定义各段台本（含每段专属关键词与翻页偏移） ──
+        # keywords: 用于 Pexels 搜索的关键词列表
+        # page:     Pexels 结果页码，同关键词不同页可得不同素材
         intro_text = "今天的科技简报来了！共三条要点，我们来看看。"
         outro_text = "以上就是今天的科技简报，觉得有用的话别忘了点赞收藏，我们明天见！"
 
         segment_defs = [
-            {"text": intro_text, "is_cover": True,  "tag": "intro"},
+            {
+                "text": intro_text, "is_cover": True, "tag": "intro",
+                "keywords": general_keywords, "page": 1,
+            },
         ]
         for i, point in enumerate(points, start=1):
             spoken = rewrite_for_spoken(point["header"], point["body"])
+            # 从每条要点标题中提取专属关键词，让背景与内容高度相关
+            point_kw = extract_keywords_from_text(
+                point["header"] + " " + point.get("visual_keyword", ""), n=4
+            ) or general_keywords
             segment_defs.append({
-                "text":     spoken,
-                "is_cover": False,
-                "tag":      f"point_{i}",
+                "text": spoken, "is_cover": False, "tag": f"point_{i}",
+                "keywords": point_kw, "page": i,   # 不同要点用不同页，即使关键词相似也能避免重复
             })
-        segment_defs.append({"text": outro_text, "is_cover": True, "tag": "outro"})
+        segment_defs.append({
+            "text": outro_text, "is_cover": True, "tag": "outro",
+            "keywords": general_keywords, "page": 2,   # page=2 与 intro 的 page=1 不同
+        })
 
-        # ── Step 7：逐段生成字幕同步视频片段 ──
-        segments = []
+        # ── Step 6：逐段生成字幕同步视频片段（每段独立获取背景素材） ──
+        segments        = []
+        seg_bg_clips    = []   # 所有 VideoFileClip 保持引用直到 write_videofile 完成
+
         for seg_def in segment_defs:
             tag      = seg_def["tag"]
             text     = seg_def["text"]
             is_cover = seg_def["is_cover"]
+            kw       = seg_def["keywords"]
+            page     = seg_def["page"]
 
+            log.info(f"── [{tag}] 关键词={kw}  page={page} ──")
+
+            # ① 为本段独立获取背景素材
+            bg_video_path = assets.get_background_video(kw, tmpdir, tag=tag, page=page)
+            seg_bg_video  = None
+            seg_bg_image  = None
+
+            if bg_video_path:
+                try:
+                    seg_bg_video = VideoFileClip(bg_video_path)
+                    seg_bg_clips.append(seg_bg_video)   # 延迟到 write_videofile 后再关闭
+                    log.info(
+                        f"  [{tag}] 视频背景加载成功："
+                        f"{seg_bg_video.duration:.1f}s（{seg_bg_video.w}x{seg_bg_video.h}）"
+                    )
+                except Exception as e:
+                    log.warning(f"  [{tag}] 加载背景视频失败：{e}，降级使用图片")
+                    seg_bg_video = None
+
+            if seg_bg_video is None:
+                bg_pil       = assets.get_background_image(kw, page=page)
+                seg_bg_image = np.array(bg_pil)
+                log.info(f"  [{tag}] 使用图片背景（{seg_bg_image.shape[1]}x{seg_bg_image.shape[0]}）")
+
+            # ② TTS 合成 + 词语边界时间戳
             audio_path = os.path.join(tmpdir, f"seg_{tag}.mp3")
+            words      = generate_tts_with_words(text, audio_path)
+            sentences  = words_to_sentences(words, text)
+            log.info(f"  [{tag}] 共 {len(sentences)} 句字幕，总时长 "
+                     f"{sentences[-1]['end']:.2f}s（音频）" if sentences else "0s")
 
-            # TTS 合成 + 词语边界时间戳
-            words     = generate_tts_with_words(text, audio_path)
-            sentences = words_to_sentences(words, text)
-
-            time_info = " ".join(
-                f"[{s['start']:.2f}-{s['end']:.2f}]" for s in sentences
-            )
-            log.info(f"  [{tag}] {len(sentences)} 句字幕 | {time_info}")
-
-            # 预渲染本段标题叠加层 + 各句字幕叠加层
+            # ③ 预渲染本段标题 + 各句字幕叠加层
             title_overlay     = pre_render_title_overlay(title, is_cover)
             subtitle_overlays = {
                 s["text"]: pre_render_subtitle_overlay(s["text"])
                 for s in sentences
             }
 
+            # ④ 合成片段
             seg = create_dynamic_segment(
-                bg_video_clip     = bg_video_clip,
-                bg_image_np       = bg_image_np,
+                bg_video_clip     = seg_bg_video,
+                bg_image_np       = seg_bg_image,
                 dark_overlay      = dark_overlay,
                 title_overlay     = title_overlay,
                 subtitle_overlays = subtitle_overlays,
@@ -874,7 +936,7 @@ def main():
             segments.append(seg)
             log.info(f"  [{tag}] 片段完成（{seg.duration:.1f}s）")
 
-        # ── Step 8：拼接并导出最终 MP4 ──
+        # ── Step 7：拼接并导出最终 MP4 ──
         log.info("合成视频中，请稍候…")
         final = concatenate_videoclips(segments, method="compose")
         final.write_videofile(
@@ -892,8 +954,8 @@ def main():
         for seg in segments:
             try: seg.close()
             except Exception: pass
-        if bg_video_clip:
-            try: bg_video_clip.close()
+        for clip in seg_bg_clips:
+            try: clip.close()
             except Exception: pass
         try: final.close()
         except Exception: pass
