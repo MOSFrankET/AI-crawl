@@ -2,23 +2,23 @@ Checking your Browser…
 
 Verifying...
 
-Stuck? [Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/djry9/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+Stuck? [Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/z7zsz/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 Success!
 
 Verification failed
 
-[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/djry9/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/z7zsz/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 Verification expired
 
-[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/djry9/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/z7zsz/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 Verification expired
 
-[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/djry9/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Refresh](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/z7zsz/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
-[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/djry9/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
+[Troubleshoot](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/ov2/av0/rch/z7zsz/0x4AAAAAAB5UiAgmkGtdUBSR/auto/fbE/new/normal?lang=auto#refresh)
 
 [Privacy](https://www.cloudflare.com/privacypolicy/) • [Help](https://challenges.cloudflare.com/cdn-cgi/challenge-platform/help)
 
@@ -30,63 +30,207 @@ Close
 
 [![logo](https://techcrunch.com/wp-content/uploads/2024/10/desktop-logo.svg)](https://techcrunch.com/)
 
-![Binary code and OpenAI logo](https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?w=668)
+![Tesla logo on steering wheel](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1513214947.jpg?w=668)
 
-[Startups](https://techcrunch.com/category/startups/)
+[Transportation](https://techcrunch.com/category/transportation/)
+
+### [Tesla adds ‘streaks,’ other stats to track how often drivers use Full Self-Driving software](https://techcrunch.com/2026/04/14/tesla-adds-streaks-and-other-stats-to-track-how-often-drivers-use-full-self-driving-software/)
+
+- [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
+
+1 hour ago
+
+![Anything](https://techcrunch.com/wp-content/uploads/2025/09/dhruv_marcus.png?w=668)
+
+[Apps](https://techcrunch.com/category/apps/)
+
+### [How vibe coding app Anything is rebuilding after getting booted from the App Store twice](https://techcrunch.com/2026/04/14/how-vibe-coding-app-anything-is-rebuilding-after-getting-booted-from-the-app-store-twice/)
+
+- [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+1 hour ago
+
+![](https://techcrunch.com/wp-content/uploads/2025/01/lucid-motors-gravity-16.jpg?w=668)
+
+[Transportation](https://techcrunch.com/category/transportation/)
+
+### [Lucid Motors names new CEO, lands more money from Uber and Saudis](https://techcrunch.com/2026/04/14/lucid-motors-names-new-ceo-lands-more-money-from-uber-and-saudis/)
+
+- [Sean O'Kane](https://techcrunch.com/author/sean-okane/)
+
+3 hours ago
+
+**Top Headlines**
+
+### [Adobe fixes PDF zero-day security bug that hackers have exploited for months](https://techcrunch.com/2026/04/14/adobe-fixes-pdf-zero-day-security-bug-that-hackers-have-exploited-for-months/)
+
+- [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
 
 ### [OpenAI has bought AI personal finance startup Hiro](https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/)
 
 - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-11 hours ago
-
-![](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2248802889.jpg?w=668)
-
-[Commerce](https://techcrunch.com/category/commerce/)
-
 ### [An Amazon warehouse worker died on the job at Oregon facility](https://techcrunch.com/2026/04/13/an-amazon-warehouse-worker-died-on-the-job-at-oregon-facility/)
 
 - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
-
-11 hours ago
-
-![OpenAI CEO Sam Altman speaks during the Microsoft Build conference at the Seattle Convention Center Summit Building in Seattle, Washington on May 21, 2024.](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2153474303-e.jpg?w=668)
-
-[AI](https://techcrunch.com/category/artificial-intelligence/)
 
 ### [Stanford report highlights growing disconnect between AI insiders and everyone else](https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/)
 
 - [Sarah Perez](https://techcrunch.com/author/sarah-perez/)
 
-17 hours ago
-
-**Top Headlines**
-
-### [Uber and Nuro begin testing premium robotaxi service in San Francisco](https://techcrunch.com/2026/04/13/uber-nuro-san-francisco-testing-premium-robotaxi-service/)
-
-- [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
-
-### [Microsoft is working on yet another OpenClaw-like agent](https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/)
-
-- [Julie Bort](https://techcrunch.com/author/julie-bort/)
-
 ### [IBM pays $17M fine to end DOJ suit over DEI programs](https://techcrunch.com/2026/04/13/ibm-pays-17m-fine-to-end-doj-suit-over-dei-programs/)
 
 - [Dominic-Madori Davis](https://techcrunch.com/author/dominic-madori-davis/)
-
-### [Thousands of rare concert recordings are landing on the Internet Archive — listen now](https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/)
-
-- [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
-
-### [Booking.com confirms hackers accessed customers’ data](https://techcrunch.com/2026/04/13/booking-com-confirms-hackers-accessed-customers-data/)
-
-- [Lorenzo Franceschi-Bicchierai](https://techcrunch.com/author/lorenzo-franceschi-bicchierai/)
 
 * * *
 
 ## Latest News
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/latest/)
+
+- ![An attendee at a StrictlyVC 2025 event taking a photograph](https://techcrunch.com/wp-content/uploads/2026/03/54963244981_66492e96cc_6k.jpg?w=562)
+
+
+
+[StrictlyVC San Francisco 2026](https://techcrunch.com/events/strictlyvc-san-francisco-2026/)
+
+
+
+### [In just a couple weeks, StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together](https://techcrunch.com/2026/04/14/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/)
+
+
+
+
+
+  - [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
+
+6 minutes ago
+
+- ![Google Gemini](https://techcrunch.com/wp-content/uploads/2026/01/google-gemini-jagmeet-singh-techcrunch.jpg?w=563)
+
+
+
+[AI](https://techcrunch.com/category/artificial-intelligence/)
+
+
+
+### [Google brings its Gemini Personal Intelligence feature to India](https://techcrunch.com/2026/04/14/google-brings-its-gemini-personal-intelligence-feature-to-india/)
+
+
+
+
+
+  - [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+49 minutes ago
+
+- ![In this Photo illustration an Adobe PDF logo seen displayed on a Smartphone.](https://techcrunch.com/wp-content/uploads/2026/04/adobe-pdf-1234955991.jpg?w=562)
+
+
+
+[Security](https://techcrunch.com/category/security/)
+
+
+
+### [Adobe fixes PDF zero-day security bug that hackers have exploited for months](https://techcrunch.com/2026/04/14/adobe-fixes-pdf-zero-day-security-bug-that-hackers-have-exploited-for-months/)
+
+
+
+
+
+  - [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
+
+1 hour ago
+
+- ![Tesla logo on steering wheel](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1513214947.jpg?w=562)
+
+
+
+[Transportation](https://techcrunch.com/category/transportation/)
+
+
+
+### [Tesla adds ‘streaks,’ other stats to track how often drivers use Full Self-Driving software](https://techcrunch.com/2026/04/14/tesla-adds-streaks-and-other-stats-to-track-how-often-drivers-use-full-self-driving-software/)
+
+
+
+
+
+  - [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
+
+1 hour ago
+
+- ![Instacart logo on a phone](https://techcrunch.com/wp-content/uploads/2022/09/instacart-header.jpg?w=563)
+
+
+
+[Commerce](https://techcrunch.com/category/commerce/)
+
+
+
+### [Instacart acquires Instaleap to expand its enterprise platform internationally](https://techcrunch.com/2026/04/14/instacart-acquires-instaleap-to-expand-its-enterprise-platform-internationally/)
+
+
+
+
+
+  - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
+
+1 hour ago
+
+- ![Anything](https://techcrunch.com/wp-content/uploads/2025/09/dhruv_marcus.png?w=563)
+
+
+
+[Apps](https://techcrunch.com/category/apps/)
+
+
+
+### [How vibe coding app Anything is rebuilding after getting booted from the App Store twice](https://techcrunch.com/2026/04/14/how-vibe-coding-app-anything-is-rebuilding-after-getting-booted-from-the-app-store-twice/)
+
+
+
+
+
+  - [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+1 hour ago
+
+- ![](https://techcrunch.com/wp-content/uploads/2025/04/GettyImages-2211997215.jpg?w=668)
+
+
+
+[Space](https://techcrunch.com/category/space/)
+
+
+
+### [Amazon to buy Globalstar for $11.57B in bid to flesh out its satellite biz](https://techcrunch.com/2026/04/14/amazon-to-buy-globalstar-for-11-57b-in-bid-to-flesh-out-its-satellite-biz/)
+
+
+
+
+
+  - [Ram Iyer](https://techcrunch.com/author/ram-iyer/)
+
+2 hours ago
+
+- ![](https://techcrunch.com/wp-content/uploads/2025/01/lucid-motors-gravity-16.jpg?w=563)
+
+
+
+[Transportation](https://techcrunch.com/category/transportation/)
+
+
+
+### [Lucid Motors names new CEO, lands more money from Uber and Saudis](https://techcrunch.com/2026/04/14/lucid-motors-names-new-ceo-lands-more-money-from-uber-and-saudis/)
+
+
+
+
+
+  - [Sean O'Kane](https://techcrunch.com/author/sean-okane/)
+
+3 hours ago
 
 - ![Guests await the beginning of a news conference with U.S. Energy Secretary Jennifer Granholm at the Department of Energy headquarters to announce a breakthrough in fusion research on December 13, 2022 in Washington, DC.](https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1448790394.jpeg?w=562)
 
@@ -104,7 +248,7 @@ Close
 
   - [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
 
-3 hours ago
+7 hours ago
 
 - ![](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2248802889.jpg?w=562)
 
@@ -122,151 +266,7 @@ Close
 
   - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
 
-11 hours ago
-
-- ![Binary code and OpenAI logo](https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?w=563)
-
-
-
-[Startups](https://techcrunch.com/category/startups/)
-
-
-
-### [OpenAI has bought AI personal finance startup Hiro](https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/)
-
-
-
-
-
-  - [Julie Bort](https://techcrunch.com/author/julie-bort/)
-
-11 hours ago
-
-- ![Uber/Lucid robotaxi](https://techcrunch.com/wp-content/uploads/2025/10/uber-lucid.jpg?w=562)
-
-
-
-[Transportation](https://techcrunch.com/category/transportation/)
-
-
-
-### [Uber and Nuro begin testing premium robotaxi service in San Francisco](https://techcrunch.com/2026/04/13/uber-nuro-san-francisco-testing-premium-robotaxi-service/)
-
-
-
-
-
-  - [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
-
-14 hours ago
-
-- ![](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269268389.jpg?w=563)
-
-
-
-In Brief
-
-
-
-### [Microsoft is officially killing its Outlook Lite app next month](https://techcrunch.com/2026/04/13/microsoft-is-officially-killing-its-outlook-lite-app-next-month/)
-
-
-
-
-
-  - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
-
 15 hours ago
-
-- ![Vibrant cassette tapes in yellow, pink, green, blue, and orange](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2244156491-1.jpg?w=563)
-
-
-
-In Brief
-
-
-
-### [Thousands of rare concert recordings are landing on the Internet Archive — listen now](https://techcrunch.com/2026/04/13/thousands-of-rare-concert-recordings-are-landing-on-the-internet-archive-listen-now/)
-
-
-
-
-
-  - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
-
-15 hours ago
-
-- ![BARCELONA, CATALONIA, SPAIN - 2019/02/25: The IBM logo is seen during MWC 2019.](https://techcrunch.com/wp-content/uploads/2022/04/GettyImages-1127480719.jpg?w=562)
-
-
-
-In Brief
-
-
-
-### [IBM pays $17M fine to end DOJ suit over DEI programs](https://techcrunch.com/2026/04/13/ibm-pays-17m-fine-to-end-doj-suit-over-dei-programs/)
-
-
-
-
-
-  - [Dominic-Madori Davis](https://techcrunch.com/author/dominic-madori-davis/)
-
-16 hours ago
-
-- ![Microsoft Windows with Claw logo](https://techcrunch.com/wp-content/uploads/2026/04/Windows-Claw.png?w=563)
-
-
-
-[Enterprise](https://techcrunch.com/category/enterprise/)
-
-
-
-### [Microsoft is working on yet another OpenClaw-like agent](https://techcrunch.com/2026/04/13/microsoft-is-working-on-yet-another-openclaw-like-agent/)
-
-
-
-
-
-  - [Julie Bort](https://techcrunch.com/author/julie-bort/)
-
-16 hours ago
-
-- ![OpenAI CEO Sam Altman speaks during the Microsoft Build conference at the Seattle Convention Center Summit Building in Seattle, Washington on May 21, 2024.](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2153474303-e.jpg?w=563)
-
-
-
-[AI](https://techcrunch.com/category/artificial-intelligence/)
-
-
-
-### [Stanford report highlights growing disconnect between AI insiders and everyone else](https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/)
-
-
-
-
-
-  - [Sarah Perez](https://techcrunch.com/author/sarah-perez/)
-
-17 hours ago
-
-- ![A fishing hook on a line on a red background featuring thick zeros and ones, representing binary code.](https://techcrunch.com/wp-content/uploads/2022/08/phishing-phone-twilio.jpg?w=522)
-
-
-
-In Brief
-
-
-
-### [FBI announces takedown of phishing operation that targeted thousands of victims](https://techcrunch.com/2026/04/13/fbi-announces-takedown-of-phishing-operation-that-targeted-thousands-of-victims/)
-
-
-
-
-
-  - [Lorenzo Franceschi-Bicchierai](https://techcrunch.com/author/lorenzo-franceschi-bicchierai/)
-
-17 hours ago
 
 [Next](https://techcrunch.com/latest/?offset=10)
 
@@ -491,7 +491,33 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/category/artificial-intelligence/)
 
-![Binary code and OpenAI logo](https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?w=668)
+![An attendee at a StrictlyVC 2025 event taking a photograph](https://techcrunch.com/wp-content/uploads/2026/03/54963244981_66492e96cc_6k.jpg?w=668)
+
+[StrictlyVC San Francisco 2026](https://techcrunch.com/events/strictlyvc-san-francisco-2026/)
+
+### [In just a couple weeks, StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together](https://techcrunch.com/2026/04/14/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/)
+
+- [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
+
+6 minutes ago
+
+![Google Gemini](https://techcrunch.com/wp-content/uploads/2026/01/google-gemini-jagmeet-singh-techcrunch.jpg?w=563)
+
+[AI](https://techcrunch.com/category/artificial-intelligence/)
+
+### [Google brings its Gemini Personal Intelligence feature to India](https://techcrunch.com/2026/04/14/google-brings-its-gemini-personal-intelligence-feature-to-india/)
+
+- [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+49 minutes ago
+
+[Apps](https://techcrunch.com/category/apps/)
+
+### [How vibe coding app Anything is rebuilding after getting booted from the App Store twice](https://techcrunch.com/2026/04/14/how-vibe-coding-app-anything-is-rebuilding-after-getting-booted-from-the-app-store-twice/)
+
+- [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+1 hour ago
 
 [Startups](https://techcrunch.com/category/startups/)
 
@@ -499,9 +525,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-11 hours ago
-
-![Microsoft Windows with Claw logo](https://techcrunch.com/wp-content/uploads/2026/04/Windows-Claw.png?w=563)
+15 hours ago
 
 [Enterprise](https://techcrunch.com/category/enterprise/)
 
@@ -509,31 +533,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-16 hours ago
-
-[AI](https://techcrunch.com/category/artificial-intelligence/)
-
-### [Stanford report highlights growing disconnect between AI insiders and everyone else](https://techcrunch.com/2026/04/13/stanford-report-highlights-growing-disconnect-between-ai-insiders-and-everyone-else/)
-
-- [Sarah Perez](https://techcrunch.com/author/sarah-perez/)
-
-17 hours ago
-
-[Startups](https://techcrunch.com/category/startups/)
-
-### [Vercel CEO Guillermo Rauch signals IPO readiness as AI agents fuel revenue surge](https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/)
-
-- [Marina Temkin](https://techcrunch.com/author/marina-temkin/)
-
-20 hours ago
-
-[AI](https://techcrunch.com/category/artificial-intelligence/)
-
-### [The largest orbital compute cluster is open for business](https://techcrunch.com/2026/04/13/the-largest-orbital-compute-cluster-is-open-for-business/)
-
-- [Tim Fernholz](https://techcrunch.com/author/tim-fernholz/)
-
-1 day ago
+21 hours ago
 
 * * *
 
@@ -541,7 +541,17 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/category/startups/)
 
-![Binary code and OpenAI logo](https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?w=668)
+![An attendee at a StrictlyVC 2025 event taking a photograph](https://techcrunch.com/wp-content/uploads/2026/03/54963244981_66492e96cc_6k.jpg?w=668)
+
+[StrictlyVC San Francisco 2026](https://techcrunch.com/events/strictlyvc-san-francisco-2026/)
+
+### [In just a couple weeks, StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together](https://techcrunch.com/2026/04/14/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/)
+
+- [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
+
+6 minutes ago
+
+![Binary code and OpenAI logo](https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?w=563)
 
 [Startups](https://techcrunch.com/category/startups/)
 
@@ -549,9 +559,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Julie Bort](https://techcrunch.com/author/julie-bort/)
 
-11 hours ago
-
-![Vercel founder Guillermo Rauch](https://techcrunch.com/wp-content/uploads/2026/04/Vercel-founder-Guillermo-Rauch.jpg?w=563)
+15 hours ago
 
 [Startups](https://techcrunch.com/category/startups/)
 
@@ -559,7 +567,7 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Marina Temkin](https://techcrunch.com/author/marina-temkin/)
 
-20 hours ago
+1 day ago
 
 [Transportation](https://techcrunch.com/category/transportation/)
 
@@ -567,21 +575,13 @@ By submitting your email, you agree to our [Terms](https://techcrunch.com/terms-
 
 - [Sean O'Kane](https://techcrunch.com/author/sean-okane/)
 
-22 hours ago
+1 day ago
 
 [Startups](https://techcrunch.com/category/startups/)
 
 ### [Walmart-owned Flipkart, Amazon are squeezing India’s quick-commerce startups](https://techcrunch.com/2026/04/11/walmart-owned-flipkart-amazon-are-squeezing-indias-quick-commerce-startups/)
 
 - [Jagmeet Singh](https://techcrunch.com/author/jagmeet-singh/)
-
-2 days ago
-
-In Brief
-
-### [Kalshi wins temporary pause in Arizona criminal case](https://techcrunch.com/2026/04/11/kalshi-wins-temporary-pause-in-arizona-criminal-case/)
-
-- [Anthony Ha](https://techcrunch.com/author/anthony-ha/)
 
 3 days ago
 
@@ -790,7 +790,17 @@ Mar 19, 2026
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/category/security/)
 
-![A fishing hook on a line on a red background featuring thick zeros and ones, representing binary code.](https://techcrunch.com/wp-content/uploads/2022/08/phishing-phone-twilio.jpg?w=668)
+![In this Photo illustration an Adobe PDF logo seen displayed on a Smartphone.](https://techcrunch.com/wp-content/uploads/2026/04/adobe-pdf-1234955991.jpg?w=668)
+
+[Security](https://techcrunch.com/category/security/)
+
+### [Adobe fixes PDF zero-day security bug that hackers have exploited for months](https://techcrunch.com/2026/04/14/adobe-fixes-pdf-zero-day-security-bug-that-hackers-have-exploited-for-months/)
+
+- [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
+
+1 hour ago
+
+![A fishing hook on a line on a red background featuring thick zeros and ones, representing binary code.](https://techcrunch.com/wp-content/uploads/2022/08/phishing-phone-twilio.jpg?w=522)
 
 In Brief
 
@@ -798,9 +808,7 @@ In Brief
 
 - [Lorenzo Franceschi-Bicchierai](https://techcrunch.com/author/lorenzo-franceschi-bicchierai/)
 
-17 hours ago
-
-![A visitor uses a smartphone at the Booking.com stand at the 2026 ITB tourism trade fair on March 04, 2026 in Berlin, Germany.](https://techcrunch.com/wp-content/uploads/2026/04/booking.com-logo-e1776099133983.jpg?w=441)
+21 hours ago
 
 [Security](https://techcrunch.com/category/security/)
 
@@ -808,7 +816,7 @@ In Brief
 
 - [Lorenzo Franceschi-Bicchierai](https://techcrunch.com/author/lorenzo-franceschi-bicchierai/)
 
-18 hours ago
+23 hours ago
 
 [Security](https://techcrunch.com/category/security/)
 
@@ -816,7 +824,7 @@ In Brief
 
 - [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
 
-21 hours ago
+1 day ago
 
 [Security](https://techcrunch.com/category/security/)
 
@@ -826,17 +834,19 @@ In Brief
 
 4 days ago
 
-In Brief
-
-### [Hacker stole £700,000 from UK energy company by redirecting payment](https://techcrunch.com/2026/04/09/hacker-stole-700000-from-u-k-energy-company-by-redirecting-payment/)
-
-- [Zack Whittaker](https://techcrunch.com/author/zack-whittaker/)
-
-Apr 9, 2026
-
 ## Venture
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/category/venture)
+
+![An attendee at a StrictlyVC 2025 event taking a photograph](https://techcrunch.com/wp-content/uploads/2026/03/54963244981_66492e96cc_6k.jpg?w=668)
+
+[StrictlyVC San Francisco 2026](https://techcrunch.com/events/strictlyvc-san-francisco-2026/)
+
+### [In just a couple weeks, StrictlyVC San Francisco brings leaders from TDK Ventures, Replit, and more together](https://techcrunch.com/2026/04/14/join-the-first-strictlyvc-of-2026-in-sf-with-leaders-from-tdk-ventures-and-replits-co-founder/)
+
+- [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
+
+6 minutes ago
 
 ![Vercel founder Guillermo Rauch](https://techcrunch.com/wp-content/uploads/2026/04/Vercel-founder-Guillermo-Rauch.jpg?w=668)
 
@@ -846,7 +856,7 @@ Apr 9, 2026
 
 - [Marina Temkin](https://techcrunch.com/author/marina-temkin/)
 
-20 hours ago
+1 day ago
 
 ![](https://techcrunch.com/wp-content/uploads/2026/01/jensen-ces-2026-getty.jpg?w=668)
 
@@ -908,23 +918,39 @@ Apr 9, 2026
 
 Apr 8, 2026
 
-![Spacex rocket](https://techcrunch.com/wp-content/uploads/2024/08/spacex-in-brief.jpg?w=668)
-
-[Venture](https://techcrunch.com/category/venture/)
-
-### [How secondary markets are pricing SpaceX, OpenAI, and Anthropic before they go public](https://techcrunch.com/podcast/how-secondary-markets-are-pricing-spacex-openai-and-anthropic-before-they-go-public/)
-
-- [Maggie Nye](https://techcrunch.com/author/maggie-stamets/)
-
-Apr 7, 2026
-
 * * *
 
 ## Apps
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/category/apps/)
 
-![](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2269268389.jpg?w=668)
+![Google Gemini](https://techcrunch.com/wp-content/uploads/2026/01/google-gemini-jagmeet-singh-techcrunch.jpg?w=668)
+
+[AI](https://techcrunch.com/category/artificial-intelligence/)
+
+### [Google brings its Gemini Personal Intelligence feature to India](https://techcrunch.com/2026/04/14/google-brings-its-gemini-personal-intelligence-feature-to-india/)
+
+- [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+49 minutes ago
+
+![Instacart logo on a phone](https://techcrunch.com/wp-content/uploads/2022/09/instacart-header.jpg?w=563)
+
+[Commerce](https://techcrunch.com/category/commerce/)
+
+### [Instacart acquires Instaleap to expand its enterprise platform internationally](https://techcrunch.com/2026/04/14/instacart-acquires-instaleap-to-expand-its-enterprise-platform-internationally/)
+
+- [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
+
+1 hour ago
+
+[Apps](https://techcrunch.com/category/apps/)
+
+### [How vibe coding app Anything is rebuilding after getting booted from the App Store twice](https://techcrunch.com/2026/04/14/how-vibe-coding-app-anything-is-rebuilding-after-getting-booted-from-the-app-store-twice/)
+
+- [Ivan Mehta](https://techcrunch.com/author/ivan-mehta/)
+
+1 hour ago
 
 In Brief
 
@@ -932,9 +958,7 @@ In Brief
 
 - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
 
-15 hours ago
-
-![In this photo illustration, the Roblox Corporation logo is seen displayed on a smartphone screen.](https://techcrunch.com/wp-content/uploads/2026/02/roblox-header.jpg?w=563)
+19 hours ago
 
 [Gaming](https://techcrunch.com/category/gaming/)
 
@@ -942,37 +966,31 @@ In Brief
 
 - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
 
-23 hours ago
-
-[Social](https://techcrunch.com/category/social/)
-
-### [X says it’s reducing payments to clickbait accounts](https://techcrunch.com/2026/04/12/x-says-its-reducing-payments-to-clickbait-accounts/)
-
-- [Anthony Ha](https://techcrunch.com/author/anthony-ha/)
-
-2 days ago
-
-[Apps](https://techcrunch.com/category/apps/)
-
-### [YouTube Premium and YouTube Music are getting more expensive](https://techcrunch.com/2026/04/10/youtube-premium-youtube-music-subscription-price-increase/)
-
-- [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
-
-4 days ago
-
-[TechCrunch Disrupt 2026](https://techcrunch.com/events/techcrunch-disrupt/)
-
-### [Last 24 hours: Save up to $500 on your TechCrunch Disrupt 2026 pass](https://techcrunch.com/2026/04/10/final-24-hours-save-up-to-500-on-your-techcrunch-disrupt-2026-pass/)
-
-- [TechCrunch Events](https://techcrunch.com/author/techcrunch-events/)
-
-4 days ago
+1 day ago
 
 ## Transportation
 
 [See More ![](https://techcrunch.com/wp-content/themes/tc-24/assets/svg/arrow-up-right.svg)](https://techcrunch.com/category/transportation/)
 
-![Uber/Lucid robotaxi](https://techcrunch.com/wp-content/uploads/2025/10/uber-lucid.jpg?w=668)
+![Tesla logo on steering wheel](https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-1513214947.jpg?w=668)
+
+[Transportation](https://techcrunch.com/category/transportation/)
+
+### [Tesla adds ‘streaks,’ other stats to track how often drivers use Full Self-Driving software](https://techcrunch.com/2026/04/14/tesla-adds-streaks-and-other-stats-to-track-how-often-drivers-use-full-self-driving-software/)
+
+- [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
+
+1 hour ago
+
+![](https://techcrunch.com/wp-content/uploads/2025/01/lucid-motors-gravity-16.jpg?w=563)
+
+[Transportation](https://techcrunch.com/category/transportation/)
+
+### [Lucid Motors names new CEO, lands more money from Uber and Saudis](https://techcrunch.com/2026/04/14/lucid-motors-names-new-ceo-lands-more-money-from-uber-and-saudis/)
+
+- [Sean O'Kane](https://techcrunch.com/author/sean-okane/)
+
+3 hours ago
 
 [Transportation](https://techcrunch.com/category/transportation/)
 
@@ -980,9 +998,7 @@ In Brief
 
 - [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
 
-14 hours ago
-
-![Slate Auto's electric pickup truck](https://techcrunch.com/wp-content/uploads/2025/05/Blank-Slate-Profile_web.jpg?w=563)
+18 hours ago
 
 [Transportation](https://techcrunch.com/category/transportation/)
 
@@ -990,7 +1006,7 @@ In Brief
 
 - [Sean O'Kane](https://techcrunch.com/author/sean-okane/)
 
-22 hours ago
+1 day ago
 
 [Transportation](https://techcrunch.com/category/transportation/)
 
@@ -999,22 +1015,6 @@ In Brief
 - [Kirsten Korosec](https://techcrunch.com/author/kirsten-korosec/)
 
 2 days ago
-
-[Transportation](https://techcrunch.com/category/transportation/)
-
-### [Slate Auto: Everything you need to know about the Bezos-backed EV startup](https://techcrunch.com/2026/04/12/slate-auto-everything-you-need-to-know-about-the-bezos-backed-ev-startup/)
-
-- [Sean O'Kane](https://techcrunch.com/author/sean-okane/)
-
-2 days ago
-
-[Climate](https://techcrunch.com/category/climate/)
-
-### [Battery recycler Ascend Elements files for bankruptcy](https://techcrunch.com/2026/04/10/battery-recycler-ascend-elements-files-for-bankruptcy/)
-
-- [Tim De Chant](https://techcrunch.com/author/tim-de-chant/)
-
-4 days ago
 
 ## In Brief
 
@@ -1034,7 +1034,7 @@ In Brief
 
   - [Aisha Malik](https://techcrunch.com/author/aisha-malik/)
 
-15 hours ago
+19 hours ago
 
 - ![Vibrant cassette tapes in yellow, pink, green, blue, and orange](https://techcrunch.com/wp-content/uploads/2026/04/GettyImages-2244156491-1.jpg?w=563)
 
@@ -1052,7 +1052,7 @@ In Brief
 
   - [Amanda Silberling](https://techcrunch.com/author/amanda-silberling/)
 
-15 hours ago
+19 hours ago
 
 - ![BARCELONA, CATALONIA, SPAIN - 2019/02/25: The IBM logo is seen during MWC 2019.](https://techcrunch.com/wp-content/uploads/2022/04/GettyImages-1127480719.jpg?w=562)
 
@@ -1070,7 +1070,7 @@ In Brief
 
   - [Dominic-Madori Davis](https://techcrunch.com/author/dominic-madori-davis/)
 
-16 hours ago
+20 hours ago
 
 - ![A fishing hook on a line on a red background featuring thick zeros and ones, representing binary code.](https://techcrunch.com/wp-content/uploads/2022/08/phishing-phone-twilio.jpg?w=522)
 
@@ -1088,7 +1088,7 @@ In Brief
 
   - [Lorenzo Franceschi-Bicchierai](https://techcrunch.com/author/lorenzo-franceschi-bicchierai/)
 
-17 hours ago
+21 hours ago
 
 - ![Anthropic](https://techcrunch.com/wp-content/uploads/2026/01/anthropic-image-jagmeet-singh-techcrunch.jpg?w=563)
 
